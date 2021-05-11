@@ -21,6 +21,8 @@ body {
 	-moz-osx-font-smoothing: grayscale; /* Font rendering in Firefox on Mac */
 }
 
+
+
 a, 
 a:link, 
 a:active { 
@@ -223,6 +225,9 @@ col {
 
 }
 
+button {
+	-webkit-appearance: none;
+  }
 
 
 a.theme-btn, button.theme-btn {
@@ -272,10 +277,7 @@ a.btn-red.heart, button.btn-red.heart, a.btn-red.heart:hover, button.btn-red.hea
 	margin-bottom: 0;
 }
 
-	:focus {
-		outline: 0 !important;
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-	  }
+
 
 a.btn-red, button.btn-red {
 	color: red;
@@ -301,7 +303,10 @@ button.btn-green:hover {
 	border: 2px solid green;
 	
 }
-
+:focus {
+	outline: 0 !important;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
 
 .input-group-lg > .form-control, .form-control {
 	border-radius: 0;
