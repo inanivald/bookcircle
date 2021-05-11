@@ -228,7 +228,9 @@ col {
 button {
 	-webkit-appearance: none;
   }
-
+[type="button"] {
+	-webkit-appearance: none;
+}
 
 a.theme-btn, button.theme-btn {
     color: #3B454E;
