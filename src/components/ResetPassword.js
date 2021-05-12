@@ -11,14 +11,12 @@ const ResetPassword = () => {
 	const { reset } = useAuth()
 	const navigate = useNavigate()
 
-
 	const handleReset = async (e) => {
 		e.preventDefault()
 
 		setError(null);
 
 		try {
-			// try to log in the user with the specified credentials
 			setLoading(true)
 			await reset(emailRef.current.value)
 			navigate('/confirmation')
@@ -28,8 +26,7 @@ const ResetPassword = () => {
 		}
 	}
 
-	return (
-		
+	return (		
 		<>
 		<Row>
 			<Col md={{ span: 6, offset: 3 }}>
@@ -58,7 +55,6 @@ const ResetPassword = () => {
 		</Row>
 	</>
 			
-	
 	)
 }
 

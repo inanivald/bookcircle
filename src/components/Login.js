@@ -12,7 +12,6 @@ const Login = () => {
 	const { login } = useAuth()
 	const navigate = useNavigate()
 
-
 	const handleLogin = async (e) => {
 		e.preventDefault()
 

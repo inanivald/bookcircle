@@ -6,9 +6,7 @@ const UnreadBooksView = ({ books }) => {
 
 const unreadBooks = books.filter(book => book.read === false)
 
-
 	return (
-	
 	<>
 		<Row>
 			{unreadBooks.map(book => (

@@ -4,11 +4,8 @@ import Header from './Header'
 import { Link } from 'react-router-dom'
 import MyBooks from './MyBooks'
 
-
-
 const Home = () => {
 	const { currentUser } = useAuth()
-
 
 	return (
 		<div className="">
@@ -25,7 +22,6 @@ const Home = () => {
 					<MyBooks  />
 			</div>
 		</div>
-		
 	)
 }
 

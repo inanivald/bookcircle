@@ -7,14 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import Placeholder from '../assets/images/placeholder.png'
 
-
 function Search() {
   	const [result, setResult] = useState('');
  	const [loading, setLoading] = useState(false);
 	const [cards, setCards] = useState([]);
 	
 	const apiKey = process.env.REACT_APP_FIREBASE_API_KEY
-
 
 	const handleSubmit = () => {
     	setLoading(true);
@@ -31,7 +29,7 @@ function Search() {
 				console.log(err.response);
 			});
     
-  };
+  	};
 
   const mainHeader = () => {
     return (

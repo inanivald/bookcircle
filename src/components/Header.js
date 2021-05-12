@@ -1,7 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-
 const Header = () => {
 	const navigate = useNavigate();
 		
@@ -16,8 +15,7 @@ const Header = () => {
 				<p className="ingress text-center">Do you want to add a book to the book list?</p>
 				<button className="btn theme-btn" onClick={handleClick}>Search</button>
 			</section>
-		</div>
-
+		</div>s
 	)
 }
 

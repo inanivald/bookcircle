@@ -23,23 +23,15 @@ const BooksView = ({ books }) => {
 				await db.collection('books').doc(book.id).update({
 					read: false,
 				});
-
 	
 			} catch (err) {
 				setError(err.message);			
 			}
 		  }
-		
 	}
-
-
-	
-	
 	return (
-	
 	<>
 		<Row>
-	
 			{books.map(book => (
 				<Col className="mb-3" md={6} lg={3} key={book.id}>
 					<Card className="mb-3 h-100">
@@ -78,15 +70,13 @@ const BooksView = ({ books }) => {
 							
 						</Card.Body>
 						<Card.Footer>
-								<small className="text-muted">This book was added by {book.addedBy}</small>
-							</Card.Footer>
+							<small className="text-muted">This book was added by {book.addedBy}</small>
+						</Card.Footer>
 					</Card>
 				</Col>
-				
 			))}
 		</Row>
 	</>
-	
 	)
 }
 
