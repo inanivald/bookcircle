@@ -11,13 +11,16 @@ import Placeholder from '../assets/images/placeholder.png'
 function Search() {
   	const [result, setResult] = useState('');
  	const [loading, setLoading] = useState(false);
-  	const [cards, setCards] = useState([]);
+	const [cards, setCards] = useState([]);
+	
+	const apiKey = process.env.REACT_APP_FIREBASE_API_KEY
+
 
 	const handleSubmit = () => {
     	setLoading(true);
      
       	axios.get(
-			  `https://www.googleapis.com/books/v1/volumes?q=${result}&maxResults=40`
+			  `https://www.googleapis.com/books/v1/volumes?q=${result}&maxResults=40&key${apiKey}`
         	)
 			.then(res => {
 				setCards(res.data.items);
