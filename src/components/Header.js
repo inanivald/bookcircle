@@ -15,7 +15,7 @@ const Header = () => {
 				<p className="ingress text-center">Do you want to add a book to the book list?</p>
 				<button className="btn theme-btn" onClick={handleClick}>Search</button>
 			</section>
-		</div>s
+		</div>
 	)
 }
 
